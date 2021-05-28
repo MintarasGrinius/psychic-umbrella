@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  color: #620232;
+}
+
+a.nav-link {
+  margin: 1rem 0.5rem 0 1rem;
+  font-size: 0.75rem;
+  color: #6c6c6c;
+}
+
+.nav-link.left-side-menu {
+  margin: 1rem 1rem 0 1rem;
+}
+
+nav a.nav-link:hover {
+  color: #282c34;
+}
+
+.singup-btn {
+  margin: 1rem 1rem 0 1rem;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background-color: #68dcb7;
+  border-radius: 4px 20px 20px 20px;
+  border: none;
+  padding: 0 1rem 0 1.5rem;
+}
+
+svg.btn-icon {
+  font-size: 0.5rem;
+  margin-left: 0.5rem;
+}
