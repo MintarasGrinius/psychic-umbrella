@@ -7,7 +7,7 @@ export interface NavBarProps {}
 const NavBar: React.FC<NavBarProps> = () => {
   return (
     <>
-      <div className="row">
+      <div className="row nav-bar">
         <div className="col-8">
           <nav className="nav">
             <Logo />
