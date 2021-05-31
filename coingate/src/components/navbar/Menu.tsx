@@ -7,7 +7,6 @@ export interface MenuProps {
 
 const LeftSideMenu: React.FC<MenuProps> = (props) => {
   const { options, optionClassName } = props;
-  console.log(options);
 
   return (
     <>

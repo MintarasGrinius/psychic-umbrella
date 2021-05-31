@@ -1,3 +1,14 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 a.nav-link {
   margin: 1rem 0.5rem 0 1rem;
   font-size: 0.75rem;
@@ -22,6 +33,10 @@ nav a.nav-link:hover {
   padding: 0 1rem 0 1.5rem;
 }
 
+div.row.nav-bar.mobile-nav {
+  display: none;
+}
+
 svg.btn-icon {
   font-size: 0.5rem;
   margin-left: 0.5rem;
@@ -30,6 +45,7 @@ svg.btn-icon {
 .row.nav-bar {
   box-shadow: 0 2px 0 #d4d4d4;
   width: 100%;
+  margin: 0;
 }
 
 .background {
@@ -88,6 +104,93 @@ h1 {
   z-index: -99;
 }
 
+button.dropdown-btn {
+  margin: 0.7rem;
+  height: 1.5rem;
+}
+
+div.text-container-mobile > p {
+  padding-top: 5rem;
+  color: #ffffff;
+  display: none;
+}
+
+@media only screen and (max-width: 897px) {
+  h1 {
+    padding: 3rem 0.5rem 3rem 0.5rem;
+  }
+
+  div.row.nav-bar.mobile-nav {
+    display: flex;
+  }
+
+  div.right-column {
+    width: 100%;
+  }
+  div.currency-app-background {
+    width: 90%;
+  }
+
+  div.left-column {
+    width: 100%;
+  }
+
+  .currency-app-shadow-background {
+    visibility: hidden;
+  }
+
+  div.box {
+    left: -100px;
+    width: 500%;
+    bottom: 65%;
+    height: 1500px;
+  }
+
+  div.container-fluid.background {
+    height: 1000px;
+  }
+
+  p.text,
+  button.green-text {
+    display: none;
+    width: 100%;
+  }
+
+  div.col-7 {
+    width: 100%;
+  }
+
+  div.container {
+    margin: 0;
+    padding: 5%;
+    height: 110vh;
+  }
+
+  div.row.nav-bar.desktop-nav {
+    display: none;
+  }
+
+  img.d-inline-block.align-text-top {
+    height: 1.5rem;
+  }
+
+  svg.mobile-menu-icon {
+    color: #6c6c6c;
+  }
+
+  div.text-container-mobile > p {
+    display: contents;
+  }
+
+  button.buy-btn {
+    /* margin-bottom: 10rem; */
+  }
+}
+
+div.dropdown {
+  display: block;
+}
+
 .currency-app-background {
   padding: 5rem 1rem 2rem 1rem;
   background-color: #ffffff;
@@ -95,30 +198,116 @@ h1 {
   width: 350px;
   height: 400px;
   position: absolute;
-
-  /* position: absolute; */
 }
 
 input.currency-input {
   border-radius: 15px;
   font-size: 0.75rem;
+  border-left: none;
+  text-align: center;
 }
 
 button.dropdown-toggle {
   border-radius: 15px;
   border-color: #d9d9d9;
-  /* color: #f7931a; */
   font-size: 0.6rem;
+  border-left: none;
 }
 
 button.dropdown-toggle:hover {
   background-color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+  font-size: 0.6rem;
 }
-svg.eur-icon {
+
+svg.crypto-icon {
+  margin-right: 0.1rem;
   color: #f7931a;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
-svg.btc-icon {
-  color: #f7931a;
-  font-size: 1.25rem;
+
+ul.dropdown-menu {
+  min-width: 3rem;
+  border-radius: 10px;
+}
+
+a.dropdown-item {
+  text-align: center;
+}
+
+div.payment-select-container {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+
+.payment-select-dropdown > div {
+  border-radius: 14px;
+}
+
+.payment-select-container > div {
+  margin-top: 1.75rem;
+}
+
+option.selected {
+  font-size: 2rem;
+  background-image: url(media/sepa_small_logo.svg);
+}
+
+button.payment-method {
+  width: 100%;
+  text-align: start;
+  border-radius: 12px;
+}
+
+span.css-1okebmr-indicatorSeparator {
+  visibility: hidden;
+}
+
+svg.css-tj5bde-Svg {
+  width: 10px;
+}
+
+div.css-26l3qy-menu {
+  border-radius: 5px;
+}
+
+button.buy-btn {
+  width: 100%;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background-color: #68dcb7;
+  border-radius: 4px 20px 20px 20px;
+  border: none;
+  height: 2.2rem;
+  margin-top: 4rem;
+}
+
+div.buy-container {
+  height: 100%;
+}
+
+button.gray-bacground {
+  background-color: #d9d9d9;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+span.input-group-text {
+  font-size: 0.75rem;
+  border-radius: 15px 0 0 15px;
+  border-right: none;
+  background: none;
+  height: 100%;
+}
+
+button.mobile-menu-dropdown {
+  border: none;
 }
