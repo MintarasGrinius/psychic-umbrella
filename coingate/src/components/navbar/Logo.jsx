@@ -3,9 +3,8 @@ import small_logo from "../../media/small_logo.png";
 const Logo = () => {
   return (
     <a
-      onClick={() => window.location.replace("https://coingate.com/")}
+      href="https://coingate.com/"
       className="m-3 mt-4"
-      href="#"
       style={{ paddingLeft: "1rem" }}
     >
       <img

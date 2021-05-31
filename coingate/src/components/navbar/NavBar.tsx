@@ -2,7 +2,7 @@ import * as React from "react";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import Logo from "./Logo.jsx";
 import Menu from "./Menu";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import menuAlt2 from "@iconify-icons/heroicons-outline/menu-alt-2";
 
 const options: string[] = ["Products", "Resources", "Buy Instantly"];
@@ -44,7 +44,6 @@ const NavBar: React.FC = () => {
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                onClick={() => window.location.replace("https://coingate.com/")}
               >
                 <Icon
                   height="25"
