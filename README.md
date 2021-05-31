@@ -1,4 +1,4 @@
-# CoinGate Junior Frontend Developer evaluation task
+# Frontend Developer evaluation task
 
 To start project:
     
